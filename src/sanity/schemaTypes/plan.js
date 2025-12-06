@@ -3,6 +3,7 @@ export default {
   title: "Plans",
   type: "document",
   fields: [
+    
     { name: "name", type: "string" },
     { name: "subtitle", type: "string" },
     { name: "price", type: "string" },

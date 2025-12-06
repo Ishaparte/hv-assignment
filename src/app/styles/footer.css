@@ -1,66 +1,123 @@
-/* ===========================
-    FOOTER CONTAINER
-=========================== */
+/* ==========================
+   FOOTER BASE
+========================== */
 .footer-container {
-  width: 100%;
   background: #0f0f0f;
+  padding: 60px 30px;
   color: white;
-  padding: 60px 40px;
-  font-family: "Neue Montreal", sans-serif;
-  position: relative;
+  width: 100%;
 }
 
-/* ===========================
-    TOP FOOTER ROW
-=========================== */
+/* ==========================
+   TOP SECTION
+========================== */
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 80px;
+  gap: 20px;
+  flex-wrap: wrap; /* helps tablet layout */
 }
 
 .footer-links p {
-  font-size: 44px;
-  margin: 0 0 20px 0;
-  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .footer-email {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 300;
+  text-align: right;
+  word-break: break-word;
 }
 
-/* ===========================
-    COPYRIGHT + BRAND META
-=========================== */
+/* ==========================
+   META SECTION
+========================== */
 .footer-meta {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
-  opacity: 0.6;
-  font-size: 16px;
+  margin-top: 30px;
+  font-size: 15px;
+  opacity: 0.7;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.footer-copy {
-  margin: 0;
-}
-
-.footer-brand {
-  margin: 0;
-}
-
-/* ===========================
-    HUGE BACKGROUND TEXT
-=========================== */
+/* ==========================
+   BIG BACKGROUND TEXT
+========================== */
 .footer-background {
-  font-size: 170px;
-  font-weight: 300;
-  justify-content: center;
-  display: flexl;
-  color: #6a6a6a;
-  opacity: 0.4;
-  margin-top: 20px;
-  line-height: 0.8;
-  text-transform: uppercase;
+  font-size: 120px;
+  opacity: 0.25;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1;
+  word-break: break-word;
+}
+
+
+/* ==========================================
+   TABLETS — stack layout cleanly
+========================================== */
+@media (max-width: 900px) {
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-email {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .footer-background {
+    font-size: 90px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE — full stacked layout
+========================================== */
+@media (max-width: 600px) {
+
+  .footer-container {
+    padding: 40px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-links p {
+    font-size: 24px;
+  }
+
+  .footer-email {
+    font-size: 20px;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+  }
+
+  .footer-background {
+    font-size: 60px;
+  }
+}
+
+
+/* ==========================================
+   VERY SMALL SCREENS
+========================================== */
+@media (max-width: 380px) {
+  .footer-background {
+    font-size: 40px;
+  }
 }

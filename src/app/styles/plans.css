@@ -1,15 +1,17 @@
 /* WRAPPER */
 .plans-wrapper {
   width: 100%;
-  background: #fff;
-  color: white;
+  background: #0f0f0f;
+  padding-bottom: 150px;
 }
 
 /* FULL PLAN CARD */
 .plan-card {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  width: 100%;
+  /* margin-bottom: 120px; */
 }
 
 /* LEFT PANEL */
@@ -19,6 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  color: white;
 }
 
 /* PLAN NAME */
@@ -44,26 +47,15 @@
   margin-top: 20px;
 }
 
-.plan-price-box {
+.plan-price-box,
+.plan-frequency,
+.plan-annual {
   background: #1d1d1d;
   padding: 18px 20px;
   border: 1px solid #333;
-}
-
-.plan-price-box h3 {
-  font-size: 20px;
-}
-
-.plan-price-box p {
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-.plan-frequency,
-.plan-annual {
-  background: transparent;
-  padding: 18px;
-  border: 1px solid #333;
+  flex: 1;
+  text-align: center;
+  color: white;
 }
 
 .plan-annual span {
@@ -71,7 +63,7 @@
   opacity: 0.6;
 }
 
-/* SUBSCRIBE BUTTON */
+/* BUTTON */
 .plan-subscribe-btn {
   background: #d1d1d1;
   border: none;
@@ -79,6 +71,7 @@
   padding: 18px 28px;
   cursor: pointer;
   font-size: 18px;
+  margin-left: auto;
 }
 
 /* FEATURES */
@@ -91,6 +84,7 @@
   align-items: center;
   gap: 10px;
   font-size: 20px;
+  color: white;
 }
 
 .feature-number {
@@ -116,6 +110,7 @@
   border-bottom: 1px solid #333;
   font-size: 17px;
   opacity: 0.9;
+  color: white;
 }
 
 /* RIGHT IMAGE */
@@ -129,5 +124,129 @@
 @media (max-width: 1000px) {
   .plan-card {
     grid-template-columns: 1fr;
+  }
+
+
+}
+  /* ============================
+   DESKTOP (unchanged)
+============================ */
+
+/* your existing desktop CSS stays EXACTLY SAME */
+
+
+
+/* ============================
+   TABLET (≤ 900px)
+============================ */
+@media (max-width: 900px) {
+  .plan-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .plan-left {
+    padding: 50px 30px;
+  }
+
+  .plan-name {
+    font-size: 38px;
+  }
+
+  .plan-subtitle {
+    font-size: 24px;
+  }
+
+  .plan-right img {
+    height: 420px;
+  }
+}
+
+
+
+/* ============================
+   MOBILE (≤ 600px)
+============================ */
+@media (max-width: 600px) {
+
+  /* STACK IMAGE FIRST THEN CONTENT */
+  .plan-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-right img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .plan-left {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .plan-name {
+    font-size: 30px;
+  }
+
+  .plan-subtitle {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  /* PRICING STACKS VERTICALLY */
+  .plan-pricing-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .plan-price-box,
+  .plan-frequency,
+  .plan-annual {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .plan-subscribe-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  /* FEATURES */
+  .plan-feature-item {
+    font-size: 16px;
+  }
+
+  .feature-number {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  /* INCLUDED SERVICES */
+  .included-services ul li {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+
+
+/* ============================
+   VERY SMALL MOBILE (≤ 380px)
+============================ */
+@media (max-width: 380px) {
+  .plan-name {
+    font-size: 26px;
+  }
+  .plan-subtitle {
+    font-size: 18px;
+  }
+  .plan-feature-item {
+    font-size: 14px;
   }
 }

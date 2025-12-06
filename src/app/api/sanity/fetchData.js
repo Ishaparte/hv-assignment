@@ -27,6 +27,7 @@ export async function getHomepage() {
     }
   `);
  
+  //Plans section
 const plans = await client.fetch(groq`
   *[_type == "plan"] 
   | order(
@@ -46,6 +47,7 @@ const plans = await client.fetch(groq`
     }
 `);
 
+//Footer Section
  const footer = await client.fetch(groq`
   *[_type == "footer"][0]{
     links,
