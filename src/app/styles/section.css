@@ -1,0 +1,90 @@
+/* MAIN CONTAINER */
+.solutions-section {
+  width: 100%;
+  padding: 120px 80px;
+  font-family: "Neue Montreal", sans-serif;
+  background: #fff;
+  color: black;
+}
+
+/* TOP BIG PARAGRAPH */
+.solutions-top-text {
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 1.1;
+  max-width: 75%;
+  margin-bottom: 80px;
+}
+
+/* GRID */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* LEFT IMAGE */
+.solutions-left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* RIGHT SIDE BLOCK */
+.solutions-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* SMALL PARAGRAPH */
+.solutions-small-text {
+  font-size: 22px;
+  line-height: 1.4;
+  max-width: 420px;
+}
+
+/* OUR PLANS TITLE */
+.solutions-title {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* PLAN LIST */
+.plan-item {
+  font-size: 22px;
+  padding: 14px 0;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.plan-arrow {
+  font-size: 18px;
+}
+
+/* MAIN HEADING BELOW IMAGE */
+.solutions-main-heading {
+  margin-top: 120px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 600;
+  max-width: 75%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+  .solutions-top-text {
+    font-size: 50px;
+  }
+  .solutions-main-heading {
+    font-size: 50px;
+  }
+}

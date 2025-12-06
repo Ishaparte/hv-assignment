@@ -1,0 +1,66 @@
+/* ===========================
+    FOOTER CONTAINER
+=========================== */
+.footer-container {
+  width: 100%;
+  background: #0f0f0f;
+  color: white;
+  padding: 60px 40px;
+  font-family: "Neue Montreal", sans-serif;
+  position: relative;
+}
+
+/* ===========================
+    TOP FOOTER ROW
+=========================== */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.footer-links p {
+  font-size: 44px;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+.footer-email {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* ===========================
+    COPYRIGHT + BRAND META
+=========================== */
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.footer-copy {
+  margin: 0;
+}
+
+.footer-brand {
+  margin: 0;
+}
+
+/* ===========================
+    HUGE BACKGROUND TEXT
+=========================== */
+.footer-background {
+  font-size: 170px;
+  font-weight: 300;
+  justify-content: center;
+  display: flexl;
+  color: #6a6a6a;
+  opacity: 0.4;
+  margin-top: 20px;
+  line-height: 0.8;
+  text-transform: uppercase;
+}

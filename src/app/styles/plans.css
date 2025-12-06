@@ -1,0 +1,133 @@
+/* WRAPPER */
+.plans-wrapper {
+  width: 100%;
+  background: #fff;
+  color: white;
+}
+
+/* FULL PLAN CARD */
+.plan-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* LEFT PANEL */
+.plan-left {
+  background: #111;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* PLAN NAME */
+.plan-name {
+  font-size: 46px;
+  font-weight: 600;
+  color: #B4FFB4;
+}
+
+/* SUBTITLE */
+.plan-subtitle {
+  font-size: 32px;
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 1.3;
+}
+
+/* PRICING ROW */
+.plan-pricing-row {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.plan-price-box {
+  background: #1d1d1d;
+  padding: 18px 20px;
+  border: 1px solid #333;
+}
+
+.plan-price-box h3 {
+  font-size: 20px;
+}
+
+.plan-price-box p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.plan-frequency,
+.plan-annual {
+  background: transparent;
+  padding: 18px;
+  border: 1px solid #333;
+}
+
+.plan-annual span {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* SUBSCRIBE BUTTON */
+.plan-subscribe-btn {
+  background: #d1d1d1;
+  border: none;
+  color: black;
+  padding: 18px 28px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* FEATURES */
+.plan-features {
+  margin-top: 30px;
+}
+
+.plan-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.feature-number {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+/* INCLUDED SERVICES */
+.included-services h4 {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.included-services ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* RIGHT IMAGE */
+.plan-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .plan-card {
+    grid-template-columns: 1fr;
+  }
+}
